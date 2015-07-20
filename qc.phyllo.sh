@@ -5,7 +5,7 @@
 #$ -N QC
 #$ -o $JOB_NAME.o$JOB_ID
 #$ -e $JOB_NAME.e$JOB_ID
-#$ -q ray512cc,raycc
+#$ -q R2D2
 #$ -pe fill 5 
 #$ -P communitycluster
 
