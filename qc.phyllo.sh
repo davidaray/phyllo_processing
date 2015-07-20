@@ -13,7 +13,7 @@
 
 BASEDIR=/lustre/scratch/daray/ray_phyllo
 SEQDIR=/lustre/scratch/daray/HiSeq
-WORKDIR=$BASEDIR/QCoutput
+WORKDIR=$BASEDIR/qc_HiSeq
 
 mkdir $WORKDIR
 cd $WORKDIR
@@ -32,9 +32,6 @@ RAY_SOFTWARE=/lustre/work/daray/software
 TRIM_HOME=/lustre/work/apps/Trimmomatic-0.27
 FASTX_HOME=/lustre/work/apps/fastx_toolkit-0.0.14/bin
 VCFTOOLS_HOME=/lustre/work/daray/software/vcftools_0.1.12b/bin
-
-
-cd $WORK_HOME
 
 for RAW_READ_FOLDER in $SEQDIR/HiSeq/*;
 	mkdir $SEQDIR/qc_HiSeq/$RAW_READ_FOLDER;	\
